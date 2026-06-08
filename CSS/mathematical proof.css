@@ -161,6 +161,9 @@ img{
   width: 80%;
 }
 
+.formula {
+    gap:4px;
+}
 @media screen and (max-width:767px) {
   input{
     width: 35px;
