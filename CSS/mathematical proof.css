@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.step {
+  min-height: 100vh; 
+  padding: 40px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+img{
+  width: 20vw;
+  object-fit: contain;
+}
+
+.step {
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #4baee4;
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+h2{
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+.main_leftarea p{
+  line-height: 1.2;
+  text-align: left;
+}
+
+
+
+.MPI_img-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.MPI_img {
+  width: 300px;
+  display: block;
+  margin: 10px auto;
+}
+
+.MPI_hidden {
+  display: none;
+}
+
+
+.MPI_btn-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.MPI_button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #2edde3;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.MPIA_button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #36a1ff;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+.MPIA_blank {
+  width: 80px;
+  border: none;
+  border-bottom: 2px solid #000;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+}
+
+
+.formula {
+  display: flex;
+  gap: 4px;
+}
+
+.fraction {
+  display: inline-block;
+  /* text-align: center; */
+  vertical-align: middle;
+}
+
+.fraction_top {
+  display: block;
+  border-bottom: 3px solid #000;
+  padding: 4px 8px;
+  font-weight: 800; 
+  font-size: 15px;
+}
+
+.fraction_bottom {
+  display: block;
+  font-weight: 800; 
+  padding: 4px 8px;
+  font-size: 15px;
+
+}
+
+input {
+  width: 40px;
+
+  border: 1px solid #333;
+  border-radius: 10px;
+
+}
+img{
+  width: 80%;
+}
+
+@media screen and (max-width:767px) {
+  input{
+    width: 27px;
+  }
+  .step{
+    padding: 20px 0;
+  }
+}

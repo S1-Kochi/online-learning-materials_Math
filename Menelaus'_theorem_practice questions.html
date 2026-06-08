@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学-オンライン教材</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/Cevas'_theorem.css">
+    <link rel="stylesheet" href="css/mathematical proof.css">
+    <link rel="stylesheet" href="css/Cevas'_theorem_practice questions.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/header.js" defer></script>
+
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="header_name">
+        <a href="index.html">数学-オンライン教材</a>
+      </h1>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_menu">
+          <li class="header_menulist"><a href="index.html">トップ</a></li>
+          <li class="header_menulist"><a href="Cevas'_theorem.html">チェバの定理</a></li>
+          <li class="header_menulist"><a href="Menelaus'_theorem.html">メネラウスの定理</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main_body">
+        <p class="PQ_Section">問１   △ABCにおいて、BCを外分する点をP、AB,ACを内分する点をR,Qとするとき、以下の条件の際のAQとQCの比を答えよ。(半角で答えよ。)
+        </p>
+
+        <div class="main_container">
+          <div class="main_leftarea">
+            <p><strong>(1)BP:PC=4:1&nbsp;&nbsp; &nbsp;&nbsp;AR:RB=3:5</strong></p>
+            <img src="img/Menelaus'_theorem-PQ01.png" alt="">
+            <div class="answer_area">
+              <p>回答</p><br>
+              <p>AQ:QC=</p>
+              <input type="text" id="q1" placeholder="答えを入力">
+            </div>
+            <!-- <br><br> -->
+          </div>
+        <!-- </div> -->
+
+          <div class="main_rightarea">
+            <p><strong>(2)BC:PC=7:5  &nbsp;&nbsp;&nbsp;&nbsp; AR:RB=2:1</strong></p>
+            <img src="img/Menelaus'_theorem-PQ02.png" alt="">
+            <div class="answer_area">
+              <p>回答</p><br>
+              <p>AQ:QC=</p>
+              <input type="text" id="q2" placeholder="答えを入力">
+            </div>
+            <!-- <br><br> -->
+          </div> 
+        </div>
+        <!-- 判定ボタン
+        <button onclick="checkAnswers()">回答する</button> -->
+
+        <hr>
+
+        <!-- <p id="result"></p> -->
+
+      </div>
+      <div class="main_body">
+        <p class="PQ_Section">問2  △ABCにおいて、BC,AB,ACを外分する点をP,R,Qとするとき、以下の条件の際のAQとQCの比を答えよ。(半角で答えよ。)</p>
+
+        <div class="main_container">
+          <div class="main_leftarea">
+            <p><strong>(1) BP:PC=3:2&nbsp;&nbsp; &nbsp;&nbsp;AR:RB=1:5</strong></p>
+            <img src="img/Menelaus'_theorem-PQ03.png" alt="">
+            <div class="answer_area">
+              <p>回答</p><br>
+              <p>AQ:QC=</p>
+              <input type="text" id="q3" placeholder="答えを入力">
+            </div>
+            <!-- <br><br> -->
+          </div>
+        <!-- </div> -->
+
+          <div class="main_rightarea">
+            <p><strong>(2) BC:PC=1:3 &nbsp;&nbsp; &nbsp;&nbsp;AR:RB=2:5 </strong></p>
+            <img src="img/Menelaus'_theorem-PQ04.png" alt="">
+            <div class="answer_area">
+              <p>回答</p><br>
+              <p>AQ:QC=</p>
+              <input type="text" id="q4" placeholder="答えを入力">
+            </div>
+            <!-- <br><br> -->
+          </div> 
+        </div>
+        
+      </div>
+      <hr>
+      <div class="main_body">
+        <p class="PQ_Section">問3 以下の図形の時の問に答えよ。(半角で答えよ。)</p>
+
+        <div class="main_container">
+          <div class="main_leftarea">
+            <p><strong>(1-a) AE:EB=2:3&nbsp;&nbsp; &nbsp;&nbsp; AF:FC=5:6 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BDとDCの比を求めよ。</strong></p>
+            <p><strong>(1-b) AGとGDの比を求めよ。</strong></p>
+            <img src="img/Menelaus'_theorem-PQ05.png" alt="">
+            <p>回答</p>
+            <div class="answer_area">
+              <p>(1-a) BD:DC=</p>
+              <input type="text" id="q5" placeholder="答えを入力">
+            </div>
+            <div class="answer_area">
+
+              <p>(1-b) AG:GD=</p>
+              <input type="text" id="q6" placeholder="答えを入力">
+            </div>
+          </div>
+        <!-- </div> -->
+
+          <div class="main_rightarea">
+            <p><strong>(2-a) AD:DB=5:6 &nbsp;&nbsp; &nbsp;&nbsp; AF:FC=10:3 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCとCEの比を求めよ。</strong></p>
+            <p><strong>(2-b) AGとGEの比を求めよ。</strong></p>
+            <img src="img/Menelaus'_theorem-PQ06.png" alt="">
+            <p>回答</p>
+            <div class="answer_area">
+              <p>(2-a)BC:CE=</p>
+              <input type="text" id="q7" placeholder="答えを入力">
+            </div>
+            <div class="answer_area">
+              <p>(2-b)AG:GE=</p>
+              <input type="text" id="q8" placeholder="答えを入力">
+            </div>
+          </div> 
+        </div>
+        
+      </div>
+      <hr>
+      <!-- 判定ボタン -->
+      <div>
+        <div class="button_PQ">
+          <button onclick="checkAnswers()">回答する</button>
+        </div>
+      </div>
+      <p><br></p>
+      <div>
+        <br>
+        <div class="button_PQ">
+          <p id="result"></p>
+        </div>
+
+
+
+
+        <script>
+          function checkAnswers() {
+            const a1 = document.getElementById("q1").value.trim();
+            const a2 = document.getElementById("q2").value.trim();
+            const a3 = document.getElementById("q3").value.trim();
+            const a4 = document.getElementById("q4").value.trim();
+            const a5 = document.getElementById("q5").value.trim();
+            const a6 = document.getElementById("q6").value.trim();
+            const a7 = document.getElementById("q7").value.trim();
+            const a8 = document.getElementById("q8").value.trim();
+
+
+            const correct1 = "12:5";
+            const correct2 = "24:5";
+            const correct3 = "3:10";
+            const correct4 = "8:15";
+            const correct5 = "5:4";
+            const correct6 = "1:6";
+            const correct7 = "3:1";
+            const correct8 = "2:5";
+
+
+            let score = 0;
+
+            if (a1 === correct1) score++;
+            if (a2 === correct2) score++;
+            if (a3 === correct3) score++;
+            if (a4 === correct4) score++;
+            if (a5 === correct5) score++;
+            if (a6 === correct6) score++;
+            if (a7 === correct7) score++;
+            if (a8 === correct8) score++;
+
+            let message = `正解数：${score}/8`;
+
+            if (score === 8) {
+              message += " 全問正解！";
+            }
+
+            document.getElementById("result").textContent = message;
+          }
+        </script>
+      </div>
+      <div>
+        <div class="btn-area">
+          <button class="mybtn"><a href="Menelaus'_theorem.html">定理</a></button>
+          <button class="mybtn"><a href="Menelaus'_theorem_mathematical proof.html">証明</a></button>
+          <button class="mybtn"><a href="Menelaus'_theorem_practice questions.html">練習問題</a></button>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer_menuarea">
+          <div class="footer_leftarea">
+            <p class="footer_lefttitle"><a href="Cevas'_theorem.html">チェバの定理</a></p>
+            <ul class="footer_leftlist">
+              <li><a href="Cevas'_theorem_mathematical proof.html">－証明</a></li>
+              <li><a href="Cevas'_theorem_practice questions.html">－練習問題</a></li>
+            </ul>
+          </div>
+          <div class="footer_rightarea">
+            <p class="footer_righttitle"><a href="Menelaus'_theorem.html">メネラウスの定理</a></p>
+            <ul class="footer_rightlist">
+              <li><a href="Menelaus'_theorem_mathematical proof.html">－証明</a></li>
+              <li><a href="Menelaus'_theorem_practice questions.html">－練習問題</a></li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>

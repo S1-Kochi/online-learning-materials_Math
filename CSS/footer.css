@@ -1,0 +1,17 @@
+#footer{
+  background-color: #1f1f1f;
+  padding: 10px 10%;
+  /* color: #fff; */
+}
+.footer_menuarea a{
+  color: #fff;
+}
+.footer_menuarea {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.footer_menuarea  li{
+  margin-top: 10%;
+}
+

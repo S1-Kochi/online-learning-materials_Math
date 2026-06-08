@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学-オンライン教材</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/Cevas'_theorem.css">
+    <link rel="stylesheet" href="css/mathematical proof.css">
+    <link rel="stylesheet" href="css/Cevas'_theorem_practice questions.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/header.js" defer></script>
+
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="header_name">
+        <a href="index.html">数学-オンライン教材</a>
+      </h1>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_menu">
+          <li class="header_menulist"><a href="index.html">トップ</a></li>
+          <li class="header_menulist"><a href="Cevas'_theorem.html">チェバの定理</a></li>
+          <li class="header_menulist"><a href="Menelaus'_theorem.html">メネラウスの定理</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main_body">
+        <p class="PQ_Section">問１  △ABCにおいて、点Q、Rが辺AC、ABを以下のように内分するとき、図中の点Pに対して、BP:PCを求めよ。(半角で答えよ。)</p>
+
+        <div class="main_container">
+          <div class="main_leftarea">
+            <p><strong>(1)AQ:QC=1:1&nbsp;&nbsp; &nbsp;&nbsp;AR:RB=2:1</strong></p>
+            <img src="img/Cevas_theorem-PQ05.png" alt="">
+            <div class="answer_area">
+              <p>回答</p><br>
+              <p>BP:PC=</p>
+              <input type="text" id="q1" placeholder="答えを入力">
+            </div>            
+          </div>
+        <!-- </div> -->
+
+          <div class="main_rightarea">
+            <p><strong>(2)AQ:QC=3:5  &nbsp;&nbsp;&nbsp;&nbsp; AR:RB=15:16</strong></p>
+            <img src="img/Cevas_theorem-PQ04.png" alt="">
+            <div class="answer_area">
+              <p>回答</p><br>
+              <p>BP:PC=</p>
+              <input type="text" id="q2" placeholder="答えを入力">
+            </div>
+          </div> 
+        </div>
+        <!-- 判定ボタン
+        <button onclick="checkAnswers()">回答する</button> -->
+
+        <hr>
+
+        <!-- <p id="result"></p> -->
+
+      </div>
+      <div class="main_body">
+        <p class="PQ_Section">問2  △ABCにおいて、点Q、Rが辺AC、ABを以下のように外分するとき、図中の点Pに対して、BP:PCを求めよ。(半角で答えよ。)</p>
+
+        <div class="main_container">
+          <div class="main_leftarea">
+            <p><strong>(1) AQ:QC=7:3&nbsp;&nbsp; &nbsp;&nbsp;AR:RB=6:1</strong></p>
+            <img src="img/Cevas_theorem-PQ07.png" alt="">
+            <div class="answer_area">
+              <p>回答</p>
+              <p>BP:PC=</p>
+              <input type="text" id="q3" placeholder="答えを入力">
+            </div>
+          </div>
+        <!-- </div> -->
+
+          <div class="main_rightarea">
+            <p><strong>(2) AQ:QC=1:3 &nbsp;&nbsp; &nbsp;&nbsp;AR:RB=1:6 </strong></p>
+            <img src="img/Cevas_theorem-PQ08.png" alt="">
+            <div class="answer_area">
+              <p>回答</p>
+              <p>BP:PC=</p>
+              <input type="text" id="q4" placeholder="答えを入力">
+            </div>
+          </div> 
+        </div>
+        
+      </div>
+      <hr>
+      <div class="main_body">
+        <p class="PQ_Section">問3  △ABCにおいて、点Q、Pが辺AC、BCを以下のように内分する。以下の問を答えよ。(半角で答えよ。)</p>
+
+        <div class="main_container">
+          <div class="main_leftarea">
+            <p><strong>(1) AQ:QC=6:5&nbsp;&nbsp; &nbsp;&nbsp;BP:PC=18:25<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARが15の時のRBを求めよ。</strong></p>
+            <img src="img/Cevas_theorem-PQ09.png" alt="">
+            <div class="answer_area">
+              <p>回答</p><br>
+              <p>RB=</p>
+              <input type="text" id="q5" placeholder="答えを入力">
+            </div>
+          </div>
+        <!-- </div> -->
+
+          <div class="main_rightarea">
+            <p><strong>(2) AQ:QC=5:4 &nbsp;&nbsp; &nbsp;&nbsp;BP:PC=16:5<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RBが12.8の時のARを求めよ。</strong></p>
+            <img src="img/Cevas_theorem-PQ06.png" alt="">
+            <div class="answer_area">
+              <p>回答</p>
+              <p>AR=</p>
+              <input type="text" id="q6" placeholder="答えを入力">
+            </div>
+          </div> 
+        </div>
+        
+      </div>
+      <hr>
+      <!-- 判定ボタン -->
+      <div>
+                <div class="button_PQ">
+          <button onclick="checkAnswers()">回答する</button>
+        </div>
+      </div>
+      <p><br></p>
+      <div>
+        <br>
+        <div class="button_PQ">
+          <p id="result"></p>
+        </div>
+
+
+
+
+        <script>
+          function checkAnswers() {
+            const a1 = document.getElementById("q1").value.trim();
+            const a2 = document.getElementById("q2").value.trim();
+            const a3 = document.getElementById("q3").value.trim();
+            const a4 = document.getElementById("q4").value.trim();
+            const a5 = document.getElementById("q5").value.trim();
+            const a6 = document.getElementById("q6").value.trim();
+
+
+            const correct1 = "1:2";
+            const correct2 = "16:25";
+            const correct3 = "7:18";
+            const correct4 = "2:1";
+            const correct5 = "9";
+            const correct6 = "5";
+
+
+            let score = 0;
+
+            if (a1 === correct1) score++;
+            if (a2 === correct2) score++;
+            if (a3 === correct3) score++;
+            if (a4 === correct4) score++;
+            if (a5 === correct5) score++;
+            if (a6 === correct6) score++;
+
+            let message = `正解数：${score}/6`;
+
+            if (score === 6) {
+              message += " 全問正解！";
+            }
+
+            document.getElementById("result").textContent = message;
+          }
+        </script>
+      </div>
+
+      <div>
+        <div class="btn-area">
+          <button class="mybtn"><a href="Cevas'_theorem.html">定理</a></button>
+          <button class="mybtn"><a href="Cevas'_theorem_mathematical proof.html">証明</a></button>
+          <button class="mybtn"><a href="Cevas'_theorem_practice questions.html">練習問題</a></button>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer_menuarea">
+          <div class="footer_leftarea">
+            <p class="footer_lefttitle"><a href="Cevas'_theorem.html">チェバの定理</a></p>
+            <ul class="footer_leftlist">
+              <li><a href="Cevas'_theorem_mathematical proof.html">－証明</a></li>
+              <li><a href="Cevas'_theorem_practice questions.html">－練習問題</a></li>
+            </ul>
+          </div>
+          <div class="footer_rightarea">
+            <p class="footer_righttitle"><a href="Menelaus'_theorem.html">メネラウスの定理</a></p>
+            <ul class="footer_rightlist">
+              <li><a href="Menelaus'_theorem_mathematical proof.html">－証明</a></li>
+              <li><a href="Menelaus'_theorem_practice questions.html">－練習問題</a></li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>

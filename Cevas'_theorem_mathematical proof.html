@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学-オンライン教材</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/Cevas'_theorem.css">
+    <link rel="stylesheet" href="css/mathematical proof.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/mathematical proof.js"></script>
+
+    <script src="js/header.js" defer></script>
+    <script src="js/Cevas'_theorem_mathematical proof.js"></script>
+    
+
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="header_name">
+        <a href="index.html">数学-オンライン教材</a>
+      </h1>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_menu">
+          <li class="header_menulist"><a href="index.html">トップ</a></li>
+          <li class="header_menulist"><a href="Cevas'_theorem.html">チェバの定理</a></li>
+          <li class="header_menulist"><a href="Menelaus'_theorem.html">メネラウスの定理</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="main_Title">チェバの定理の証明</p>
+      <div class="step" id="step1">
+        <h2>ステップ1</h2>
+        
+        <div class="main_container">
+          <div class="main_leftarea"> 
+            <p>
+              辺OAを共有する△<input data-id="p1_A1">と△<input data-id="p1_A2">があるとする<br>
+              直線AOと線分BCの交点をPとする<br>
+              Bから直線AOに下した垂線をBHとする<br>
+              Cから直線AOに下した垂線をCKとする<br>
+              すると、
+            </p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">△OAB</span>
+                  <span class="fraction_bottom">△OCA</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p2_A3"></span>
+                  <span class="fraction_bottom"><input data-id="p2_A4"></span>
+                </span>
+                ・・・①
+            </div><br>
+            <p>  
+              △<input data-id="p3_A5">と△<input data-id="p3_A6">において、<br>
+              ∠<input data-id="p4_A7">＝∠<input data-id="p4_A8">＝90°<br>
+              <input data-id="p5_A9">//<input data-id="p5_A10">より、錯覚が等しくなるため、∠<input data-id="p6_A11">＝∠<input data-id="p6_A12"><br>
+              よって、二角相等のため△<input data-id="p7_A13">∽△<input data-id="p7_A14">となり、<br>
+            </p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">BH</span>
+                  <span class="fraction_bottom">CK</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p8_A15"></span>
+                  <span class="fraction_bottom"><input data-id="p8_A16"></span>
+                </span>
+                ・・・②
+            </div>
+              <!-- 𝐵𝐻/𝐶𝐾=𝐵𝑃/𝑃𝐶 ・・・②<br> -->
+            <p><br>①と②より、</p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">△OAB</span>
+                  <span class="fraction_bottom">△OCA</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p9_A17"></span>
+                  <span class="fraction_bottom"><input data-id="p9_A18"></span>
+                </span>
+                ・・・③
+            </div>
+            <!-- <p>・・・③<br> -->
+            </p>
+
+
+            <button onclick="check1()" class="MPIA_button">判定</button>
+            <p id="result1"></p>
+          </div>
+
+          <div class="main_rightarea">
+
+              <img id="MPI_topImg" src="img/Cevas_theorem-MP01.png">
+              <div>
+                  <button onclick="toggleImage(this)">ヒントを見る</button>
+                  <img src="img/Cevas_theorem-MP1.gif" style="display:none;">
+              </div>
+
+          </div>
+        </div>
+
+        <button onclick="nextStep(2)">完了して次へ</button>
+
+        
+      </div>
+
+      <div class="step hidden" id="step2">
+        <h2>ステップ2</h2>
+
+        <div class="main_container">
+          <div class="main_leftarea"> 
+            <p>
+              辺OBを共有する△<input data-id="p21_B1">と△<input data-id="p21_B2">があるとする<br>
+              直線BOと線分ACの交点をQとする<br>
+              Aから直線BOに下した垂線ADをとする<br>
+              Cから直線BOに下した垂線CEをとする<br>
+              すると、
+            </p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">△𝑂𝐵𝐶</span>
+                  <span class="fraction_bottom">△𝑂𝐴𝐵</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p22_B3"></span>
+                  <span class="fraction_bottom"><input data-id="p22_B4"></span>
+                </span>
+                ・・・④
+            </div><br>
+            <p>  
+              △<input data-id="p23_B5">と△<input data-id="p23_B6">において、<br>
+              ∠<input data-id="p24_B7">＝∠<input data-id="p24_B8">＝90°<br>
+              <input data-id="p25_B9">//<input data-id="p25_B10">より、錯覚が等しくなるため、∠<input data-id="p26_B11">＝∠<input data-id="p26_B12"><br>
+              よって、二角相等のため△<input data-id="p27_B13">∽△<input data-id="p27_B14">となり、<br>
+            </p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">CE</span>
+                  <span class="fraction_bottom">AD</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p28_B15"></span>
+                  <span class="fraction_bottom"><input data-id="p28_B16"></span>
+                </span>
+                ・・・⑤
+            </div>
+            <p><br>④と⑤より、</p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">△OBC</span>
+                  <span class="fraction_bottom">△OAB</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p29_B17"></span>
+                  <span class="fraction_bottom"><input data-id="p29_B18"></span>
+                </span>
+                ・・・⑥
+            </div>
+            </p>
+
+
+            <button onclick="check2()" class="MPIA_button">判定</button>
+            <p id="result2"></p>
+          </div>
+
+          <div class="main_rightarea">
+              <img id="MPI_topImg" src="img/Cevas_theorem-MP02.png">
+
+              <div>
+                  <button onclick="toggleImage(this)">ヒントを見る</button>
+                  <img src="img/Cevas_theorem-MP2.gif" style="display:none;">
+              </div>
+          </div>
+          
+        </div>
+
+        <button onclick="nextStep(3)">完了して次へ</button>
+      </div>
+
+      <div class="step hidden" id="step3">
+        <h2>ステップ3</h2>
+        <div class="main_container">
+          <div class="main_leftarea"> 
+            <p>
+              辺OCを共有する△<input data-id="p31_C1">と△<input data-id="p31_C2">があるとする<br>
+              直線COと線分ABの交点をRとする<br>
+              Aから直線COに下した垂線AFをとする<br> 
+              Bから直線COに下した垂線BGをとする
+              <br>
+              すると、
+            </p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">△OCA</span>
+                  <span class="fraction_bottom">△OBC</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p32_C3"></span>
+                  <span class="fraction_bottom"><input data-id="p32_C4"></span>
+                </span>
+                ・・・⑦
+            </div><br>
+            <p>  
+              △<input data-id="p33_C5">と△<input data-id="p33_C6">において、<br>
+              ∠<input data-id="p34_C7">＝∠<input data-id="p34_C8">＝90°<br>
+              <input data-id="p35_C9">//<input data-id="p35_C10">より、錯覚が等しくなるため、∠<input data-id="p36_C11">＝∠<input data-id="p36_C12"><br>
+              よって、二角相等のため△<input data-id="p37_C13">∽△<input data-id="p37_C14">となり、<br>
+            </p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">AF</span>
+                  <span class="fraction_bottom">BG</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p38_C15"></span>
+                  <span class="fraction_bottom"><input data-id="p38_C16"></span>
+                </span>
+                ・・・⑧
+            </div>
+            <p><br>⑦と⑧より、</p>
+            <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">△OCA</span>
+                  <span class="fraction_bottom">△OBC</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p39_C17"></span>
+                  <span class="fraction_bottom"><input data-id="p39_C18"></span>
+                </span>
+                ・・・⑨
+            </div>
+            </p>
+
+
+            <button onclick="check3()" class="MPIA_button">判定</button>
+            <p id="result3"></p>
+          </div>
+
+          <div class="main_rightarea">
+              <img id="MPI_topImg" src="img/Cevas_theorem-MP03.png">
+              <div>
+                  <button onclick="toggleImage(this)">ヒントを見る</button>
+                  <img src="img/Cevas_theorem-MP3.gif" style="display:none;">
+              </div>
+          </div>
+        </div>
+        <button onclick="nextStep(4)">完了して次へ
+        </button>
+      </div>
+      <div class="step hidden" id="step4">
+        <h2>ステップ4</h2>
+        <div class="main_container">
+          <div class="main_leftarea"> 
+              <div class="formula">
+                ③より、
+                  <span class="fraction">
+                    <span class="fraction_top">△OAB</span>
+                    <span class="fraction_bottom">△OCA</span>
+                  </span>
+
+                  <span class="operator">=</span>
+
+                  <span class="fraction">
+                    <span class="fraction_top"><input data-id="p41_D1"></span>
+                    <span class="fraction_bottom"><input data-id="p41_D2"></span>
+                  </span>
+
+              </div>
+              <div class="formula">
+                ⑥より、
+                  <span class="fraction">
+                    <span class="fraction_top">△OBC</span>
+                    <span class="fraction_bottom">△OAB</span>
+                  </span>
+
+                  <span class="operator">=</span>
+
+                  <span class="fraction">
+                    <span class="fraction_top"><input data-id="p42_D3"></span>
+                    <span class="fraction_bottom"><input data-id="p42_D4"></span>
+                  </span>
+              </div>
+              <div class="formula">
+                ⑨より、
+                  <span class="fraction">
+                    <span class="fraction_top">△OCA</span>
+                    <span class="fraction_bottom">△OBC</span>
+                  </span>
+
+                  <span class="operator">=</span>
+
+                  <span class="fraction">
+                    <span class="fraction_top"><input data-id="p43_D5"></span>
+                    <span class="fraction_bottom"><input data-id="p43_D6"></span>
+                  </span>
+              </div>
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">BP</span>
+                  <span class="fraction_bottom">PC</span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">CQ</span>
+                  <span class="fraction_bottom">QA</span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">AR</span>
+                  <span class="fraction_bottom">RB</span>
+                </span>
+              </div>
+              <br>
+              <div class="formula">
+                <br>
+                <span class="operator">＝</span>
+                <span class="fraction">
+                  <span class="fraction_top">△<input data-id="p44_D7"></span>
+                  <span class="fraction_bottom">△<input data-id="p44_D8"></span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">△<input data-id="p45_D9"></span>
+                  <span class="fraction_bottom">△<input data-id="p45_D10"></span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">△<input data-id="p46_D11"></span>
+                  <span class="fraction_bottom">△<input data-id="p46_D12"></span>
+                </span>
+              </div>
+              <br>
+              <div class="formula">
+                <span class="operator">＝ 1</span>
+
+              </div>
+
+
+              <button onclick="check4()" class="MPIA_button">判定</button>
+              <p id="result4"></p>
+          </div>
+
+          <div class="main_rightarea">
+                <img id="MPI_topImg" src="img/Cevas_theorem-MP04.png">
+                <div>
+                  <button onclick="toggleImage(this)">ヒントを見る</button>
+                  <img src="img/Cevas_theorem-MP4.gif" style="display:none;">
+              </div>
+          </div>
+        </div>
+        <button onclick="finish()">完了</button>
+      </div>
+      <div class="step hidden" id="finish">
+        <div class="finish-box">
+          <h1>完了しました！</h1>
+          <p>チェバの定理の証明が完了しました</p>
+          <button onclick="restart()">もう一度</button>
+        </div>
+      </div>
+
+
+
+
+
+      <div>
+        <div class="btn-area">
+          <button class="mybtn"><a href="Cevas'_theorem.html">定理</a></button>
+          <button class="mybtn"><a href="Cevas'_theorem_mathematical proof.html">証明</a></button>
+          <button class="mybtn"><a href="Cevas'_theorem_practice questions.html">練習問題</a></button>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer_menuarea">
+          <div class="footer_leftarea">
+            <p class="footer_lefttitle"><a href="Cevas'_theorem.html">チェバの定理</a></p>
+            <ul class="footer_leftlist">
+              <li><a href="Cevas'_theorem_mathematical proof.html">－証明</a></li>
+              <li><a href="Cevas'_theorem_practice questions.html">－練習問題</a></li>
+            </ul>
+          </div>
+          <div class="footer_rightarea">
+            <p class="footer_righttitle"><a href="Menelaus'_theorem.html">メネラウスの定理</a></p>
+            <ul class="footer_rightlist">
+              <li><a href="Menelaus'_theorem_mathematical proof.html">－証明</a></li>
+              <li><a href="Menelaus'_theorem_practice questions.html">－練習問題</a></li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
+

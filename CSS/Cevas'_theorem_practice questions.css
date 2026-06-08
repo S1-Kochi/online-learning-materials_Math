@@ -1,0 +1,45 @@
+.main_rightarea p{
+  line-height: 1.6;
+  text-align: left;
+}
+.main_rightarea {
+    padding-top: 20px;
+    font-size: 16px;
+}
+img{
+  max-height: 250px;
+}
+
+
+input {
+  width: 100px;
+  height: 30px;
+}
+
+.main_body{
+  padding: 20px;
+}
+
+.button_PQ{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.main_rightarea p{
+  line-height: 1;
+  padding-bottom: 5px;
+}
+.PQ_Section{
+  font-size: 18px;
+}
+
+.main_container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.answer_area{
+    display: flex;
+    align-items: center; /* 縦位置を揃える */
+    gap: 10px;           /* 要素間の余白 */
+}

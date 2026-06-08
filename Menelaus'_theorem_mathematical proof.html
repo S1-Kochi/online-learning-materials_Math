@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学-オンライン教材</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/Cevas'_theorem.css">
+    <link rel="stylesheet" href="css/mathematical proof.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/mathematical proof.js"></script>
+    <script src="js/Menelaus'_theorem_mathematical proof.js"></script>
+    <script src="js/header.js" defer></script>
+
+
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="header_name">
+        <a href="index.html">数学-オンライン教材</a>
+      </h1>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_menu">
+          <li class="header_menulist"><a href="index.html">トップ</a></li>
+          <li class="header_menulist"><a href="Cevas'_theorem.html">チェバの定理</a></li>
+          <li class="header_menulist"><a href="Menelaus'_theorem.html">メネラウスの定理</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="main_Title">メネラウスの定理の証明</p>
+      <div class="step" id="step1">
+        <h2>1つ目の証明</h2>
+
+        <div class="main_container">
+          <!-- <div class="main_leftarea"> 
+            <p>
+              頂点Cを通り<br>
+              直線ℓに平行な直線を引き、<br>
+              直線ABとの交点をDとする。<br>
+
+              平行線と比の定理より、<br>
+              BP:PC=<input data-id="p1_A1">:<input data-id="p1_A2">
+              <br>
+              CQ:QA=<input data-id="p2_A3">:<input data-id="p2_A4">
+            </p>
+            <br>
+            <p>
+              つまり、
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">BP</span>
+                  <span class="fraction_bottom">PC</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p3_A5"></span>
+                  <span class="fraction_bottom"><input data-id="p3_A6"></span>
+                </span>
+              </div>
+              <br>
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">CQ</span>
+                  <span class="fraction_bottom">QA</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p4_A7"></span>
+                  <span class="fraction_bottom"><input data-id="p4_A8"></span>
+                </span>
+              </div>
+              </p>
+              <br>
+              <p>
+              これを代入し、<br>
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">BP</span>
+                  <span class="fraction_bottom">PC</span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">CQ</span>
+                  <span class="fraction_bottom">QA</span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">AR</span>
+                  <span class="fraction_bottom">RB</span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>
+              <div class="formula">
+
+                <span class="operator"> =</span>
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p5_A9"></span>
+                  <span class="fraction_bottom"><input data-id="p5_A10"></span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p6_A11"></span>
+                  <span class="fraction_bottom"><input data-id="p6_A12"></span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">AR</span>
+                  <span class="fraction_bottom">RB</span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>
+              <div class="formula">
+                <span class="operator"> =1</span>
+              </div>
+            </p>
+
+
+            <button onclick="check1()" class="MPIA_button">判定</button>
+            <p id="result1"></p>
+          </div> -->
+          <div class="main_leftarea"> 
+            <p>
+              頂点Cを通り<br>
+              直線ℓに平行な直線を引き、<br>
+              直線ABとの交点をDとする。<br>
+
+              平行線と比の定理より、<br>
+              BP:PC=<input data-id="p1_A1">:<input data-id="p1_A2">
+              <br>
+              CQ:QA=<input data-id="p2_A3">:<input data-id="p2_A4">
+            </p>
+            <br>
+            <p>
+              つまり、
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">BP</span>
+                  <span class="fraction_bottom">PC</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p3_A5"></span>
+                  <span class="fraction_bottom"><input data-id="p3_A6"></span>
+                </span>
+              </div>
+              <br>
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">CQ</span>
+                  <span class="fraction_bottom">QA</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p4_A7"></span>
+                  <span class="fraction_bottom"><input data-id="p4_A8"></span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>
+              これを代入し、<br>
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">BP</span>
+                  <span class="fraction_bottom">PC</span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">CQ</span>
+                  <span class="fraction_bottom">QA</span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">AR</span>
+                  <span class="fraction_bottom">RB</span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>
+              <div class="formula">
+                <span class="operator"> =</span>
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p5_A9"></span>
+                  <span class="fraction_bottom"><input data-id="p5_A10"></span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p6_A11"></span>
+                  <span class="fraction_bottom"><input data-id="p6_A12"></span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">AR</span>
+                  <span class="fraction_bottom">RB</span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>
+              <div class="formula">
+                <span class="operator"> =1</span>
+              </div>
+            </p>
+            <button onclick="check1()" class="MPIA_button">判定</button>
+            <p id="result1"></p>
+          </div>
+
+          <!-- <button onclick="check1()">答え合わせ</button> -->
+          <!-- <div id="result1"></div> -->
+          <div class="main_rightarea">
+
+              <img id="MPI_topImg" src="img/Menelaus'_theorem-MP01.png">
+              <div>
+                  <button onclick="toggleImage(this)">ヒントを見る</button>
+                  <img src="img/Menelaus'_theorem-MP1.gif" style="display:none;">
+              </div>
+
+
+          </div>
+        </div>
+
+        <button onclick="nextStep(2)">完了して次へ</button>
+
+        
+      </div>
+
+      <div class="step hidden" id="step2">
+        <h2>2つ目の証明</h2>
+
+        <div class="main_container">
+          <div class="main_leftarea"> 
+            <p>
+              頂点Cを通り<br>
+              直線ℓに平行な直線を引き、<br>
+              直線ABとの交点をDとする。<br>
+              平行線と比の定理より、<br>
+              BP:PC=<input data-id="p21_B1">:<input data-id="p21_B2">・・・①
+              <br>
+              △<input data-id="p22_B3">と△<input data-id="p22_B4">において、<br>
+              辺CDと辺PQが平行で錯覚が等しくなるため、 <br>
+                ∠𝐷𝐶𝐴=∠<input data-id="p23_B5"> ・・・②<br>
+                ∠𝐴𝐷𝐶=∠<input data-id="p23_B6"> ・・・③<br>
+              ②,③より二角相等のため<br>
+              △<input data-id="p24_B7">∽△<input data-id="p24_B8"><br>
+              よって、CA:QA=<input data-id="p25_B9">:<input data-id="p25_B10"> ・・・④
+            </p>
+            <br>
+            <p>
+              ①より、
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">BP</span>
+                  <span class="fraction_bottom">PC</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p26_B11"></span>
+                  <span class="fraction_bottom"><input data-id="p26_B12"></span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>
+              ④より、
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">(<input data-id="p27_B13">+<input data-id="p27_B14">)</span>
+                  <span class="fraction_bottom">QA</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">(<input data-id="p28_B15">+<input data-id="p28_B16">)</span>
+                  <span class="fraction_bottom">RA</span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>              
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">CQ</span>
+                  <span class="fraction_bottom">QA</span>
+                </span>
+
+                <span class="operator">=</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p29_B17"></span>
+                  <span class="fraction_bottom"><input data-id="p29_B18"></span>
+                </span>
+              </div>
+              </p>
+              <br>
+              <p>
+              これを代入し、<br>
+              <div class="formula">
+                <span class="fraction">
+                  <span class="fraction_top">BP</span>
+                  <span class="fraction_bottom">PC</span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">CQ</span>
+                  <span class="fraction_bottom">QA</span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">AR</span>
+                  <span class="fraction_bottom">RB</span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>
+              <div class="formula">
+
+                <span class="operator"> =</span>
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p30_B19"></span>
+                  <span class="fraction_bottom"><input data-id="p30_B20"></span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top"><input data-id="p31_B21"></span>
+                  <span class="fraction_bottom"><input data-id="p31_B22"></span>
+                </span>
+
+                <span class="operator">×</span>
+
+                <span class="fraction">
+                  <span class="fraction_top">AR</span>
+                  <span class="fraction_bottom">RB</span>
+                </span>
+              </div>
+            </p>
+            <br>
+            <p>
+              <div class="formula">
+                <span class="operator"> =1</span>
+              </div>
+            </p>
+
+
+
+            <button onclick="check2()" class="MPIA_button">判定</button>
+            <p id="result2"></p>
+          </div>
+
+          <div class="main_rightarea">
+              <img id="MPI_topImg" src="img/Menelaus'_theorem-MP02.png">
+
+              <div>
+                  <button onclick="toggleImage(this)">ヒントを見る</button>
+                  <img src="img/Menelaus'_theorem-MP2.gif" style="display:none;">
+              </div>
+          </div>
+          
+        </div>
+        <button onclick="finish()">完了</button>
+      </div>
+
+      <div class="step hidden" id="finish">
+        <div class="finish-box">
+          <h1>完了しました！</h1>
+          <div class="main_container"><p>メネラウスの定理の証明が完了しました</p></div>
+          <button onclick="restart()">もう一度</button>
+        </div>
+      </div>
+
+
+
+
+
+      <div>
+        <div class="btn-area">
+          <button class="mybtn"><a href="Menelaus'_theorem.html">定理</a></button>
+          <button class="mybtn"><a href="Menelaus'_theorem_mathematical proof.html">証明</a></button>
+          <button class="mybtn"><a href="Menelaus'_theorem_practice questions.html">練習問題</a></button>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer_menuarea">
+          <div class="footer_leftarea">
+            <p class="footer_lefttitle"><a href="Cevas'_theorem.html">チェバの定理</a></p>
+            <ul class="footer_leftlist">
+              <li><a href="Cevas'_theorem_mathematical proof.html">－証明</a></li>
+              <li><a href="Cevas'_theorem_practice questions.html">－練習問題</a></li>
+            </ul>
+          </div>
+          <div class="footer_rightarea">
+            <p class="footer_righttitle"><a href="Menelaus'_theorem.html">メネラウスの定理</a></p>
+            <ul class="footer_rightlist">
+              <li><a href="Menelaus'_theorem_mathematical proof.html">－証明</a></li>
+              <li><a href="Menelaus'_theorem_practice questions.html">－練習問題</a></li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
