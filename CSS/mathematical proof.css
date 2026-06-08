@@ -164,11 +164,19 @@ img{
 .formula {
     gap:4px;
 }
+@media screen and (max-width:900px) {
+    .formula {
+      gap:1px;
+  }
+}
 @media screen and (max-width:767px) {
   input{
     width: 35px;
   }
   .step{
     padding: 20px 0;
+  }
+  .formula {
+      gap:8px;
   }
 }
