@@ -43,3 +43,17 @@ input {
     align-items: center; /* 縦位置を揃える */
     gap: 10px;           /* 要素間の余白 */
 }
+
+@media screen and (max-width: 865px) {
+  .main_container {
+    flex-direction: column;
+  }
+
+  .main_leftarea,
+  .main_rightarea {
+    width: 100%;
+  }
+  .mybtn{
+    padding: 10px;
+  }
+}
