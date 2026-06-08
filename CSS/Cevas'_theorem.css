@@ -74,7 +74,7 @@
 .main_P{
   font-size: 27px;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:767px) {
   .formula {
     font-size: 30px;
   }
