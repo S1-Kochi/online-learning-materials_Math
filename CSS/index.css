@@ -26,3 +26,18 @@
 .main_btn{
   padding-left: 20px;
 }
+
+@media screen and (max-width: 900px){
+  main_container {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+  }
+}
+@media screen and (max-width: 767px){
+  .main_container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
